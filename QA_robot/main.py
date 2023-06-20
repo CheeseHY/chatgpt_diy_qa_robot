@@ -17,7 +17,9 @@ from langchain.embeddings.openai import OpenAIEmbeddings
 
 import pinecone # 向量数据库 # pip install pinecone-client
 
-import os
+# import os
+# os.environ["http_proxy"]="127.0.0.1:4780" # 你电脑 -> 网络和Internet -> 代理 -> 使用代理服务器处 -> 取自这里的ip和port
+# os.environ["https_proxy"]="127.0.0.1:4780"
 from env import OPENAI_API_KEY,PINECONE_API_KEY,PINECONE_API_ENV,INDEX_NAME
 
 
@@ -38,7 +40,7 @@ import os
 下面的这部分代码是将文件夹中的word文档，上传到自己的向量数据库
 '''
 #首先进入文件夹查看数据
-directory_path = 'D:\\w\\code\\python\\Cheese_AI\\QA_robot\\data' #这边填入你自己的数据文件所在的文件夹
+directory_path = 'data' #这边填入你自己的数据文件所在的文件夹
 data = []
 # loop through each file in the directory
 for filename in os.listdir(directory_path):
