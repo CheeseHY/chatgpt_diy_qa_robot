@@ -17,9 +17,9 @@ from langchain.embeddings.openai import OpenAIEmbeddings
 
 import pinecone # 向量数据库 # pip install pinecone-client
 
-# import os
-# os.environ["http_proxy"]="127.0.0.1:4780" # 你电脑 -> 网络和Internet -> 代理 -> 使用代理服务器处 -> 取自这里的ip和port
-# os.environ["https_proxy"]="127.0.0.1:4780"
+import os
+os.environ["http_proxy"]="127.0.0.1:4780" # 你电脑 -> 网络和Internet -> 代理 -> 使用代理服务器处 -> 取自这里的ip和port
+os.environ["https_proxy"]="127.0.0.1:4780"
 from env import OPENAI_API_KEY,PINECONE_API_KEY,PINECONE_API_ENV,INDEX_NAME
 
 

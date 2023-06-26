@@ -30,7 +30,9 @@ from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.vectorstores import Pinecone
 import os
 
-
+import os
+os.environ["http_proxy"]="127.0.0.1:4780" # 你电脑 -> 网络和Internet -> 代理 -> 使用代理服务器处 -> 取自这里的ip和port
+os.environ["https_proxy"]="127.0.0.1:4780"
 '''
 存储完成向量数据库之后，我们就可以运行下面的代码，用streamlit帮我们做一个简单的网页可以用来调用我们的机器人问答
 '''
