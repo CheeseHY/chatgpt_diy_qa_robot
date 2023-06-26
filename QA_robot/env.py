@@ -7,7 +7,7 @@
 @Author ：Cheese
 @Date ：2023/6/13 14:38
 '''
-OPENAI_API_KEY = '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'
-PINECONE_API_KEY = '5d80a05b-1660-4d50-ba31-6cb445bac828'
+OPENAI_API_KEY = 'sk-bF11111111111111ZfQx2s8UfjlDg4Gh2khT'
+PINECONE_API_KEY = '55555555b-1660-4d50-ba31-6c888888828'
 PINECONE_API_ENV = 'us-central1-gcp'
 INDEX_NAME = 'cheese0'
